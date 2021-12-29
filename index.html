@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap" rel="stylesheet">
+    <title>Bonus Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <h1>Baby Girl Names of 2020!</h1>
+    <p id="name">Aneesha Sreerama</p>
+
+    <!-- Chart 1: Bar Graph -->
+    <div id="chart"></div>
+
+    <h2>
+        Motivation 
+    </h2>
+    <p>
+        I was looking to visualize a statistic regarding the American population for this assignment. While looking through many
+        different databases maintained by US organizations I came across a database that kept track of names for baby girls born
+        in 2020. I thought it would be interesting to see what the most common names people are naming their daughters in America,
+        the average length of the name and how popular each of the top names were.
+    </p>
+    <h2>
+        Data Sources and Cleaning
+    </h2>
+    <p>
+        The data source that I used to conduct this analysis can be found at https://www.ssa.gov/oact/babynames/limits.html. This 
+        dataset is provided by the US Social Security Team and stores the Top 1000 baby girl names for each year. The data is organized 
+        into 3 columns: Name, Gender, and Occurrences. In order to sort the data I used Python to convert the data from a long text file
+        to a dataframe. I then sorted the data by occurrences and stored the Top 15 names for the year. In addition, I used the given data 
+        to determine how long each name was and how  many names there were of that length. This analysis was done in python in order to determine
+        what the average length of a name is in 2020.
+    </p>
+</head>
+<body>
+    
+    <h2>
+        Analysis & Insights:
+    </h2>
+    <p>
+        The Top 15 names for girls in the US all comprise of names that have been on the "leaderboard" for the past decade. 
+        For more context about 1.8 million girls were born in the US in 2020. The most common name was Olivia which was has
+        a count of about 17,500. This means that about 1 in 103 girls were named Olivia. Moreover, about 1 in 10 baby girls have 
+        a name that's in the Top 15 as shown above.
+    </p>
+
+    <!-- Chart 2: Scatter Plot -->
+    <div id="scatter"></div> 
+
+    <h2>
+        Analysis & Insights:
+    </h2>
+    <p>
+        With this given dataset, I thought it would be fascinating to see what the most common length of name would be.
+        As shown in the visual, there are about 10,000 different names that have six characters. There were also a few names
+        that were as short as two letters and as long as 14. In summary, there are a lot more names in America that are about
+        5 to 7 letters long.
+    </p>
+
+
+    <!-- Links to Javascript files -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="bar.js"></script> 
+    <script src="scatter.js"></script>
+
+</body>
+</html>
